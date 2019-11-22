@@ -1,5 +1,7 @@
 {
   "name": "contact-list",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

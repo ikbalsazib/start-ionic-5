@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/user-list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-avatar>
+      <img [src]="userDetails.imgUrl" [alt]="userDetails.name">
+    </ion-avatar>
+
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">{{userDetails.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-item-divider></ion-item-divider>
+
+    <ion-card-content>
+      <div class="spec">
+        <h3><ion-icon name="calendar" slot="start"></ion-icon> Birthday: {{userDetails.birthday}}</h3>
+        <h3><ion-icon name="logo-facebook" slot="start"></ion-icon> Facebook Id: {{userDetails.fbId}}</h3>
+      </div>
+      {{userDetails.details}}
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
